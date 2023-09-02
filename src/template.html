@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title><% preact.title %></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="apple-touch-icon" href="<%= htmlWebpackPlugin.files.publicPath %>assets/icons/apple-touch-icon.png">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" />
+        <style>
+            .dark .dark\:text-white, .dark .dark\:text-white td, .dark .dark\:text-white th {
+                color: #fff;
+            }
+    
+            .dark .dark\:bg-dark {
+                background-color: #0e658f;
+            }
+        </style>
+		<% preact.headEnd %>
+	</head>
+	<body class="dark:bg-dark dark:text-white">
+		<% preact.bodyEnd %>
+
+         <!-- special scripts for integration in MTW gallery - must be placed at the bottom of the HTML after your code -->
+     <script>
+        // custom config for the MTW app 
+        const mtwAppConfig = {
+            border: false // app border in the MTW page                    
+        }
+    </script>
+    <script src="https://morethanwallet.com/appstore/index.js"></script>
+	</body>
+</html>

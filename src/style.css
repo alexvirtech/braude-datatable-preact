@@ -1,0 +1,26 @@
+html, body {
+	font: 14px/1.21 'Helvetica Neue', arial, sans-serif;
+	font-weight: 400;   
+}
+
+h1 {
+	text-align: center;
+}
+
+td,
+th {
+  text-align: left;
+}
+
+img {
+  max-width: 50px;
+  height: auto;
+}
+
+.table td,
+.table th {
+  padding: 0.75rem !important;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
